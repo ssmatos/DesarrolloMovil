@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="NavigationStyles.SignUpPage">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <Grid Padding="20">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Label Text="Sign Up"
+                   Style="{StaticResource mainLabelStyle}"
+                   Grid.Column="0"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="2"/>
+
+                <Label Text="Login"
+                   Style="{StaticResource secondaryLabelStyle}"
+                   Grid.Column="2"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   Margin="0,19,0,0"
+                   HorizontalOptions="EndAndExpand">
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ToLoginPage"/>
+                </Label.GestureRecognizers>
+                </Label>
+
+                <Image Source="camera"
+                   HeightRequest="200"
+                   Grid.Column="0"
+                   Grid.Row="1"
+                   Grid.ColumnSpan="4"/>
+
+                <Entry x:Name="Entry_Email"
+                   Placeholder="Email address"
+                   Grid.Column="0"
+                   Grid.Row="2"
+                   Grid.ColumnSpan="4"/>
+
+                <Entry x:Name="Entry_Username"
+                   Placeholder="Username"
+                   Grid.Column="0"
+                   Grid.Row="3"
+                   Grid.ColumnSpan="4"/>
+
+                <Entry x:Name="Entry_Password"
+                   Placeholder="Password"
+                   IsPassword="True"
+                   Grid.Column="0"
+                   Grid.Row="4"
+                   Grid.ColumnSpan="4"/>
+
+                <Image x:Name="Show_Password"
+                   Source="visibility"
+                   Grid.Column="3"
+                   Grid.Row="4"
+                   HeightRequest="30"
+                   HorizontalOptions="End">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ChangeVisibility"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                
+                 <Entry x:Name="Repeat_Password"
+                   Placeholder="Repeat Password"
+                   IsPassword="True"
+                   Grid.Column="0"
+                   Grid.Row="5"
+                   Grid.ColumnSpan="4"/>
+
+                <Image x:Name="Show_Password2"
+                   Source="visibility"
+                   Grid.Column="3"
+                   Grid.Row="5"
+                   HeightRequest="30"
+                   HorizontalOptions="End">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ChangeVisibility2"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Button Text="SIGN UP"
+                    Grid.Column="0"
+                    Grid.Row="6"
+                    Grid.ColumnSpan="4"
+                    BorderWidth="1"
+                    Margin="0,10,0,0"/>
+
+                <Label Text="Terms of Service"
+                   Grid.Column="0"
+                   Grid.Row="7"
+                   Grid.ColumnSpan="4"
+                   Margin="0,20,0,10"
+                   HorizontalOptions="Center"/>
+
+            </Grid>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
