@@ -35,6 +35,9 @@ namespace NavigationStyles
 			{
 				await DisplayAlert("Campo(s) vacios", "Por favor llene el/los campo(s)", "OK");
 			}
+			else
+				await Navigation.PushAsync(new MenuPage());
+
 		}
 	}
 }

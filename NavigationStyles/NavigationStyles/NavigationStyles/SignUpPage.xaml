@@ -101,6 +101,7 @@
                 </Image>
 
                 <Button Text="SIGN UP"
+                        Clicked="SignUpButton_Clicked"
                     Grid.Column="0"
                     Grid.Row="6"
                     Grid.ColumnSpan="4"

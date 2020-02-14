@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="NavigationStyles.Pages.Discovery">
+    <ContentPage.Content>
+        <StackLayout Padding="70"
+                     HorizontalOptions="CenterAndExpand">
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Image x:Name="hotel"
+                    Source="hotel"
+                       HeightRequest="100"
+                       Grid.Column="0"
+                       Grid.Row="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Label Text="Bars and Hotels"
+                       Style="{StaticResource tabLabelStyle}"
+                       HorizontalOptions="Center"
+                       Grid.Column="0"
+                       Grid.Row="1"/>
+
+                <Image x:Name="waiter"
+                    Source="waiter"
+                       HeightRequest="100"
+                       Grid.Column="3"
+                       Grid.Row="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Label Text="Fine Dining"
+                       Style="{StaticResource tabLabelStyle}"
+                       HorizontalOptions="Center"
+                       Grid.Column="3"
+                       Grid.Row="1"/>
+
+                <Image x:Name="res"
+                    Source="restaurant"
+                       HeightRequest="100"
+                       Grid.Column="0"
+                       Grid.Row="2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Label Text="Cafes"
+                       Style="{StaticResource tabLabelStyle}"
+                       HorizontalOptions="Center"
+                       Grid.Column="0"
+                       Grid.Row="3"/>
+
+                <Image x:Name="map"
+                    Source="map"
+                       HeightRequest="100"
+                       Grid.Column="3"
+                       Grid.Row="2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Label Text="Nearby"
+                       Style="{StaticResource tabLabelStyle}"
+                       HorizontalOptions="Center"
+                       Grid.Column="3"
+                       Grid.Row="3"/>
+
+                <Image x:Name="fastfood"
+                    Source="fastfood"
+                       HeightRequest="100"
+                       Grid.Column="0"
+                       Grid.Row="4">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Label Text="Fast Foods"
+                       Style="{StaticResource tabLabelStyle}"
+                       HorizontalOptions="Center"
+                       Grid.Column="0"
+                       Grid.Row="5"/>
+
+                <Image x:Name="burger"
+                    Source="burger"
+                       HeightRequest="100"
+                       Grid.Column="3"
+                       Grid.Row="4">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Label Text="Featured Foods"
+                       Style="{StaticResource tabLabelStyle}"
+                       HorizontalOptions="Center"
+                       Grid.Column="3"
+                       Grid.Row="5"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
