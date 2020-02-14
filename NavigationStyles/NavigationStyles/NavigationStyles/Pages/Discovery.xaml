@@ -22,7 +22,6 @@
 
                 <Image x:Name="hotel"
                     Source="hotel"
-                       HeightRequest="100"
                        Grid.Column="0"
                        Grid.Row="0">
                     <Image.GestureRecognizers>
@@ -38,7 +37,6 @@
 
                 <Image x:Name="waiter"
                     Source="waiter"
-                       HeightRequest="100"
                        Grid.Column="3"
                        Grid.Row="0">
                     <Image.GestureRecognizers>
@@ -52,9 +50,9 @@
                        Grid.Column="3"
                        Grid.Row="1"/>
 
-                <Image x:Name="res"
+                <Image Margin="0,40,0,0"
+                    x:Name="res"
                     Source="restaurant"
-                       HeightRequest="100"
                        Grid.Column="0"
                        Grid.Row="2">
                     <Image.GestureRecognizers>
@@ -68,9 +66,9 @@
                        Grid.Column="0"
                        Grid.Row="3"/>
 
-                <Image x:Name="map"
+                <Image Margin="0,40,0,0"
+                    x:Name="map"
                     Source="map"
-                       HeightRequest="100"
                        Grid.Column="3"
                        Grid.Row="2">
                     <Image.GestureRecognizers>
@@ -86,7 +84,6 @@
 
                 <Image x:Name="fastfood"
                     Source="fastfood"
-                       HeightRequest="100"
                        Grid.Column="0"
                        Grid.Row="4">
                     <Image.GestureRecognizers>
@@ -102,7 +99,6 @@
 
                 <Image x:Name="burger"
                     Source="burger"
-                       HeightRequest="100"
                        Grid.Column="3"
                        Grid.Row="4">
                     <Image.GestureRecognizers>
