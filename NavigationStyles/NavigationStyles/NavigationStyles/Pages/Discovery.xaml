@@ -6,99 +6,97 @@
              mc:Ignorable="d"
              x:Class="NavigationStyles.Pages.Discovery">
     <ContentPage.Content>
-        <StackLayout Padding="50"
-                     HorizontalOptions="Center">
-            <Grid>
+        <Grid Padding="50"
+                  HorizontalOptions="Center">
 
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
 
-                <Button x:Name="hotel_Button"
+            <Button x:Name="hotel_Button"
                         ImageSource="{Binding HotelElements.ImageSource}"
                         Grid.Column="0"
                         Grid.Row="0"
                         BackgroundColor="White"
                         Command="{Binding ColorChangeCommand}"/>
 
-                <Label Text="{Binding HotelElements.Title}"
+            <Label Text="{Binding HotelElements.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="0"
                        Grid.Row="1"/>
 
-                <Button x:Name="waiter_Button"
+            <Button x:Name="waiter_Button"
                         ImageSource="{Binding FineElements.ImageSource}"
                         Grid.Column="3"
                         Grid.Row="0"
                         BackgroundColor="White"
                         Command="{Binding ColorChangeCommand}"/>
 
-                <Label Text="{Binding FineElements.Title}"
+            <Label Text="{Binding FineElements.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="3"
                        Grid.Row="1"/>
 
-                <Button x:Name="res_Button"
+            <Button x:Name="res_Button"
                         ImageSource="{Binding CafeElements.ImageSource}"
                         Grid.Column="0"
                         Grid.Row="2"
                         BackgroundColor="White"
                         Command="{Binding ColorChangeCommand}"/>
 
-                <Label Text="{Binding CafeElements.Title}"
+            <Label Text="{Binding CafeElements.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="0"
                        Grid.Row="3"/>
 
-                <Button x:Name="map_Button"
+            <Button x:Name="map_Button"
                         ImageSource="{Binding MapElements.ImageSource}"
                         Grid.Column="3"
                         Grid.Row="2"
                         BackgroundColor="White"
                         Command="{Binding ColorChangeCommand}"/>
 
-                <Label Text="{Binding CafeElements.Title}"
+            <Label Text="{Binding CafeElements.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="3"
                        Grid.Row="3"/>
 
-                <Button x:Name="fastfood_Button"
+            <Button x:Name="fastfood_Button"
                         ImageSource="{Binding FastElements.ImageSource}"
                         Grid.Column="0"
                         Grid.Row="4"
                         BackgroundColor="White"
                         Command="{Binding ColorChangeCommand}"/>
 
-                <Label Text="{Binding FastElements.Title}"
+            <Label Text="{Binding FastElements.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="0"
                        Grid.Row="5"/>
 
-                <Button x:Name="burger_Button"
+            <Button x:Name="burger_Button"
                         ImageSource="{Binding FoodElements.ImageSource}"
                         Grid.Column="3"
                         Grid.Row="4"
                         BackgroundColor="White"
                         Command="{Binding ColorChangeCommand}"/>
 
-                <Label Text="{Binding FoodElements.Title}"
+            <Label Text="{Binding FoodElements.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="3"
                        Grid.Row="5"/>
 
-            </Grid>
-        </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
