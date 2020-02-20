@@ -6,8 +6,8 @@
              mc:Ignorable="d"
              x:Class="NavigationStyles.Pages.Discovery">
     <ContentPage.Content>
-        <StackLayout Padding="70"
-                     HorizontalOptions="CenterAndExpand">
+        <StackLayout Padding="50"
+                     HorizontalOptions="Center">
             <Grid>
 
                 <Grid.RowDefinitions>
@@ -20,93 +20,79 @@
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
-                <Image x:Name="hotel"
-                    Source="hotel"
-                       Grid.Column="0"
-                       Grid.Row="0">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-                    </Image.GestureRecognizers>
-                </Image>
+                <Button x:Name="hotel_Button"
+                        ImageSource="{Binding HotelElements.ImageSource}"
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        BackgroundColor="White"
+                        Command="{Binding ColorChangeCommand}"/>
 
-                <Label Text="Bars and Hotels"
+                <Label Text="{Binding HotelElements.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="0"
                        Grid.Row="1"/>
 
-                <Image x:Name="waiter"
-                    Source="waiter"
-                       Grid.Column="3"
-                       Grid.Row="0">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
-                    </Image.GestureRecognizers>
-                </Image>
+                <Button x:Name="waiter_Button"
+                        ImageSource="{Binding FineElements.ImageSource}"
+                        Grid.Column="3"
+                        Grid.Row="0"
+                        BackgroundColor="White"
+                        Command="{Binding ColorChangeCommand}"/>
 
-                <Label Text="Fine Dining"
+                <Label Text="{Binding FineElements.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="3"
                        Grid.Row="1"/>
 
-                <Image Margin="0,40,0,0"
-                    x:Name="res"
-                    Source="restaurant"
-                       Grid.Column="0"
-                       Grid.Row="2">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
-                    </Image.GestureRecognizers>
-                </Image>
+                <Button x:Name="res_Button"
+                        ImageSource="{Binding CafeElements.ImageSource}"
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        BackgroundColor="White"
+                        Command="{Binding ColorChangeCommand}"/>
 
-                <Label Text="Cafes"
+                <Label Text="{Binding CafeElements.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="0"
                        Grid.Row="3"/>
 
-                <Image Margin="0,40,0,0"
-                    x:Name="map"
-                    Source="map"
-                       Grid.Column="3"
-                       Grid.Row="2">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
-                    </Image.GestureRecognizers>
-                </Image>
+                <Button x:Name="map_Button"
+                        ImageSource="{Binding MapElements.ImageSource}"
+                        Grid.Column="3"
+                        Grid.Row="2"
+                        BackgroundColor="White"
+                        Command="{Binding ColorChangeCommand}"/>
 
-                <Label Text="Nearby"
+                <Label Text="{Binding CafeElements.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="3"
                        Grid.Row="3"/>
 
-                <Image x:Name="fastfood"
-                    Source="fastfood"
-                       Grid.Column="0"
-                       Grid.Row="4">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
-                    </Image.GestureRecognizers>
-                </Image>
+                <Button x:Name="fastfood_Button"
+                        ImageSource="{Binding FastElements.ImageSource}"
+                        Grid.Column="0"
+                        Grid.Row="4"
+                        BackgroundColor="White"
+                        Command="{Binding ColorChangeCommand}"/>
 
-                <Label Text="Fast Foods"
+                <Label Text="{Binding FastElements.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="0"
                        Grid.Row="5"/>
 
-                <Image x:Name="burger"
-                    Source="burger"
-                       Grid.Column="3"
-                       Grid.Row="4">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"/>
-                    </Image.GestureRecognizers>
-                </Image>
+                <Button x:Name="burger_Button"
+                        ImageSource="{Binding FoodElements.ImageSource}"
+                        Grid.Column="3"
+                        Grid.Row="4"
+                        BackgroundColor="White"
+                        Command="{Binding ColorChangeCommand}"/>
 
-                <Label Text="Featured Foods"
+                <Label Text="{Binding FoodElements.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="3"

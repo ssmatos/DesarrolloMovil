@@ -42,7 +42,7 @@
                    Margin="0,19,0,0"
                    HorizontalOptions="EndAndExpand">
                     <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="ToLoginPage"/>
+                    <TapGestureRecognizer Command="{Binding LoginCommand}"/>
                 </Label.GestureRecognizers>
                 </Label>
 
@@ -54,54 +54,58 @@
 
                 <Entry x:Name="Entry_Email"
                    Placeholder="Email address"
+                   Text="{Binding User.Email}"
                    Grid.Column="0"
                    Grid.Row="2"
                    Grid.ColumnSpan="4"/>
 
                 <Entry x:Name="Entry_Username"
                    Placeholder="Username"
+                   Text="{Binding User.Username}"
                    Grid.Column="0"
                    Grid.Row="3"
                    Grid.ColumnSpan="4"/>
 
                 <Entry x:Name="Entry_Password"
                    Placeholder="Password"
-                   IsPassword="True"
+                   Text="{Binding User.Password}"
+                   IsPassword="{Binding User.IsPassword}"
                    Grid.Column="0"
                    Grid.Row="4"
                    Grid.ColumnSpan="4"/>
 
                 <Image x:Name="Show_Password"
-                   Source="visibility"
+                   Source="{Binding User.Image}"
                    Grid.Column="3"
                    Grid.Row="4"
                    HeightRequest="30"
                    HorizontalOptions="End">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="ChangeVisibility"/>
+                        <TapGestureRecognizer Command="{Binding VisibilityCommand}"/>
                     </Image.GestureRecognizers>
                 </Image>
                 
                  <Entry x:Name="Repeat_Password"
                    Placeholder="Repeat Password"
-                   IsPassword="True"
+                        Text="{Binding User.RepeatPassword}"
+                   IsPassword="{Binding User.IsPassword}"
                    Grid.Column="0"
                    Grid.Row="5"
                    Grid.ColumnSpan="4"/>
 
                 <Image x:Name="Show_Password2"
-                   Source="visibility"
+                   Source="{Binding User.Image}"
                    Grid.Column="3"
                    Grid.Row="5"
                    HeightRequest="30"
                    HorizontalOptions="End">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="ChangeVisibility2"/>
+                        <TapGestureRecognizer Command="{Binding VisibilityCommand}"/>
                     </Image.GestureRecognizers>
                 </Image>
 
                 <Button Text="SIGN UP"
-                        Clicked="SignUpButton_Clicked"
+                        Command="{Binding ConfirmationSignUp}"
                     Grid.Column="0"
                     Grid.Row="6"
                     Grid.ColumnSpan="4"

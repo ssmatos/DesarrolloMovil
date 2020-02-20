@@ -41,7 +41,7 @@
                    Margin="0,19,0,0"
                    HorizontalOptions="EndAndExpand">
                 <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="ToSignUpPage"/>
+                    <TapGestureRecognizer Command="{Binding SignUpCommand}"/>
                 </Label.GestureRecognizers>
             </Label>
 
@@ -53,25 +53,27 @@
 
             <Entry x:Name="Entry_Username"
                    Placeholder="Username or email address"
+                   Text="{Binding userModel.Username}"
                    Grid.Column="0"
                    Grid.Row="2"
                    Grid.ColumnSpan="4"/>
 
             <Entry x:Name="Entry_Password"
                    Placeholder="Password"
-                   IsPassword="True"
+                   Text="{Binding userModel.Password}"
+                   IsPassword="{Binding userModel.IsPassword}"
                    Grid.Column="0"
                    Grid.Row="3"
                    Grid.ColumnSpan="4"/>
 
             <Image x:Name="Show_Password"
-                   Source="visibility"
+                   Source="{Binding userModel.Image}"
                    Grid.Column="3"
                    Grid.Row="3"
                    HeightRequest="30"
                    HorizontalOptions="End">
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="ChangeVisibility"/>
+                    <TapGestureRecognizer Command="{Binding VisibilityCommand}"/>
                 </Image.GestureRecognizers>
             </Image>
 
@@ -83,7 +85,7 @@
 
             <Button x:Name="LoginButton"
                     Text="LOG IN"
-                    Clicked="LoginButton_Clicked"
+                    Command="{Binding ConfirmLoginCommand}"
                     Grid.Column="0"
                     Grid.Row="5"
                     Grid.ColumnSpan="4"

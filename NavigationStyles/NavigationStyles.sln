@@ -7,7 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationStyles.Android", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationStyles.iOS", "NavigationStyles\NavigationStyles.iOS\NavigationStyles.iOS.csproj", "{B33C80FB-1D8D-4C38-865D-8DB83D8B79EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationStyles", "NavigationStyles\NavigationStyles\NavigationStyles.csproj", "{7AEB3EC1-ED19-4B93-BCB1-1098EBD857D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NavigationStyles", "NavigationStyles\NavigationStyles\NavigationStyles.csproj", "{7AEB3EC1-ED19-4B93-BCB1-1098EBD857D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{66233A71-5DD5-43AA-806A-F0D5463A1683}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
