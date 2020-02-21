@@ -35,11 +35,6 @@ namespace NavigationStyles.ViewModels
 
             FoodElements.Title = "Featured Foods";
             FoodElements.ImageSource = "burger";
-
-            ChangeColorCommand = new Command(() =>
-            {
-                
-            });
         }
         public event PropertyChangedEventHandler PropertyChanged;
     }

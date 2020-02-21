@@ -12,9 +12,18 @@ namespace NavigationStyles.Pages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Discovery : ContentPage
 	{
+		Button lastElementSelected = new Button();
 		public Discovery()
 		{
 			InitializeComponent();
+		}
+
+		private void Button_Clicked(object sender, EventArgs e)
+		{
+			lastElementSelected.BackgroundColor = Color.White;
+			var elementSelected = (Button)sender;
+			elementSelected.BackgroundColor = Color.Gold;
+			lastElementSelected = elementSelected;
 		}
 	}
 }
