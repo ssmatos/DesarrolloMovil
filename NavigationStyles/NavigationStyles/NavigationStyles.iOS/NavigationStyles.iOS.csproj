@@ -135,4 +135,61 @@
       <Name>NavigationStyles</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\burger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fastfood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\github.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\novisib.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\restaurant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\trophy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\visibility.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\waiter.png" />
+  </ItemGroup>
 </Project>

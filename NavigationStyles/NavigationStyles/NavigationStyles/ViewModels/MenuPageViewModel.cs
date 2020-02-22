@@ -7,34 +7,41 @@ using Xamarin.Forms;
 
 namespace NavigationStyles.ViewModels
 {
-	public class MenuPageViewModel : INotifyPropertyChanged
-	{
-        public MenuElements HotelElements { get; set; } = new MenuElements();
-        public MenuElements FineElements { get; set; } = new MenuElements();
-        public MenuElements CafeElements { get; set; } = new MenuElements();
-        public MenuElements MapElements { get; set; } = new MenuElements();
-        public MenuElements FastElements { get; set; } = new MenuElements();
-        public MenuElements FoodElements { get; set; } = new MenuElements();
+    public class MenuPageViewModel : INotifyPropertyChanged
+    {
+        public MenuPageModel HotelElement { get; set; } = new MenuPageModel();
+        public MenuPageModel FineElement { get; set; } = new MenuPageModel();
+        public MenuPageModel CafeElement { get; set; } = new MenuPageModel();
+        public MenuPageModel MapElement { get; set; } = new MenuPageModel();
+        public MenuPageModel FastElement { get; set; } = new MenuPageModel();
+        public MenuPageModel FoodElement { get; set; } = new MenuPageModel();
         public Command ChangeColorCommand { get; set; }
         public MenuPageViewModel()
         {
-            HotelElements.Title = "Bar & Hotels";
-            HotelElements.ImageSource = "hotel";
+            //ChangeColorCommand = new Command<MenuPageModel>((param) =>
+            //{
+            //    lastElementSelected.Color = Color.White;
+            //    param.Color = Color.Gold;
+            //    lastElementSelected = param;
+            //});
 
-            FineElements.Title = "Fine Dining";
-            FineElements.ImageSource = "waiter";
+            HotelElement.Title = "Bar & Hotels";
+            HotelElement.ImageSource = "hotel";
 
-            CafeElements.Title = "Cafes";
-            CafeElements.ImageSource = "restaurant";
+            FineElement.Title = "Fine Dining";
+            FineElement.ImageSource = "waiter";
 
-            MapElements.Title = "Nearby";
-            MapElements.ImageSource = "map";
+            CafeElement.Title = "Cafes";
+            CafeElement.ImageSource = "restaurant";
 
-            FastElements.Title = "Fast Foods";
-            FastElements.ImageSource = "fastfood";
+            MapElement.Title = "Nearby";
+            MapElement.ImageSource = "map";
 
-            FoodElements.Title = "Featured Foods";
-            FoodElements.ImageSource = "burger";
+            FastElement.Title = "Fast Foods";
+            FastElement.ImageSource = "fastfood";
+
+            FoodElement.Title = "Featured Foods";
+            FoodElement.ImageSource = "burger";
         }
         public event PropertyChangedEventHandler PropertyChanged;
     }

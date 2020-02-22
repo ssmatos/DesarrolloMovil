@@ -20,78 +20,78 @@
             </Grid.ColumnDefinitions>
 
             <Button x:Name="hotel_Button"
-                        ImageSource="{Binding HotelElements.ImageSource}"
+                        ImageSource="{Binding HotelElement.ImageSource}"
                         Grid.Column="0"
                         Grid.Row="0"
                         BackgroundColor="White"
                         Clicked="Button_Clicked"/>
 
-            <Label Text="{Binding HotelElements.Title}"
+            <Label Text="{Binding HotelElement.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="0"
                        Grid.Row="1"/>
 
             <Button x:Name="waiter_Button"
-                        ImageSource="{Binding FineElements.ImageSource}"
+                        ImageSource="{Binding FineElement.ImageSource}"
                         Grid.Column="3"
                         Grid.Row="0"
                         BackgroundColor="White"
                         Clicked="Button_Clicked"/>
 
-            <Label Text="{Binding FineElements.Title}"
+            <Label Text="{Binding FineElement.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="3"
                        Grid.Row="1"/>
 
             <Button x:Name="res_Button"
-                        ImageSource="{Binding CafeElements.ImageSource}"
+                        ImageSource="{Binding CafeElement.ImageSource}"
                         Grid.Column="0"
                         Grid.Row="2"
                         BackgroundColor="White"
                         Clicked="Button_Clicked"/>
 
-            <Label Text="{Binding CafeElements.Title}"
+            <Label Text="{Binding CafeElement.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="0"
                        Grid.Row="3"/>
 
             <Button x:Name="map_Button"
-                        ImageSource="{Binding MapElements.ImageSource}"
+                        ImageSource="{Binding MapElement.ImageSource}"
                         Grid.Column="3"
                         Grid.Row="2"
                         BackgroundColor="White"
                         Clicked="Button_Clicked"/>
 
-            <Label Text="{Binding CafeElements.Title}"
+            <Label Text="{Binding CafeElement.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="3"
                        Grid.Row="3"/>
 
             <Button x:Name="fastfood_Button"
-                        ImageSource="{Binding FastElements.ImageSource}"
+                        ImageSource="{Binding FastElement.ImageSource}"
                         Grid.Column="0"
                         Grid.Row="4"
                         BackgroundColor="White"
                         Clicked="Button_Clicked"/>
 
-            <Label Text="{Binding FastElements.Title}"
+            <Label Text="{Binding FastElement.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="0"
                        Grid.Row="5"/>
 
             <Button x:Name="burger_Button"
-                        ImageSource="{Binding FoodElements.ImageSource}"
+                        ImageSource="{Binding FoodElement.ImageSource}"
                         Grid.Column="3"
                         Grid.Row="4"
                         BackgroundColor="White"
                         Clicked="Button_Clicked"/>
 
-            <Label Text="{Binding FoodElements.Title}"
+            <Label Text="{Binding FoodElement.Title}"
                        Style="{StaticResource tabLabelStyle}"
                        HorizontalOptions="Center"
                        Grid.Column="3"
